@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" >
+<title>비밀번호 찾기</title>
+
+<meta charset="utf-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, width=device-width, height=device-height, target-densitydpi=medium-dpi">
+<script src="resources/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="resources/js/use/swiper-bundle.js"></script>
+
+<style>
+.spec{
+	text-align:left;
+}
+.brand {
+	text-align:left;
+}
+.name {
+	text-align:left;
+	overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height:38px;
+}
+.nm {
+	text-align:left;
+	overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+</style>
+<script type="text/javascript">
+    var IS_DEVICE = "P";
+    if ( navigator.userAgent.indexOf('Mobi') > -1 ) {
+        IS_DEVICE = "M";
+    } else {
+        IS_DEVICE = "P";
+    }
+
+</script>
+<script type="text/javascript">
+function Mobile(){
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+</script>
+
+<link rel="stylesheet" href="resources/css/use/01/style-pc.css">
+<link rel="stylesheet" href="resources/css/use/01/style-t.css">
+<link rel="stylesheet" href="resources/css/use/01/style-mo.css">
+<link rel="stylesheet" type="text/css" href="resources/css/use/02/swiper.min.css"> 
+<link rel="stylesheet" type="text/css" href="resources/css/use/02/base.css"> 
+<link rel="stylesheet" type="text/css" href="resources/css/use/02/grid.css"> 
+<link rel="stylesheet" type="text/css" href="resources/css/use/02/common.css?a=1">
+<script type="text/javascript" src="resources/js/use/swiper.min.js"></script>	
+<script type="text/javascript" src="resources/js/use/common.js"></script>
+<style type="text/css">
+input {border:none; text-indent:0px;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="wrap ban-x">
+        <div id="header">
+			<style>
+			.container .wrap .banner .btn {
+				color:#ffffff;
+			}
+			</style>
+
+			<div class="banner" style="background:#999">
+				<a href="javascript:void(0);" class="btn" class="btn" style="text-align: center;">
+					<p><b>포토리뷰</b> 작성하고 <b>사은품</b> 받자! 🎁</p>
+				</a>
+				<a class="btn close">배너 닫기</a>
+			</div>
+
+			<!--.banner-top-->
+			<script>
+			$(document).ready(function() {
+				$(".wrap").removeClass("ban-x");
+			});
+			</script>
+
+			<!--헤더 -->
+			<header>
+					<div class="h-inner">
+						<a class="btn gnb-all-menu">
+							<div id="menuToggle">
+								<input type="checkbox" style="display:none;"/>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<!--gnb 메뉴 전체보기 버튼-->
+						<div class="gnb-wrap">
+							<a href="index.html" class="btn">
+								Rental Day
+							</a>
+							<ul class="gnb-list">
+							  <li>
+								<a class="btn tit">주방가전</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">냉장고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">커피머신</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">김치냉장고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">전기밥솥</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">냉동고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">오븐</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">와인셀러</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">믹서기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">음식물처리기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">에어프라이기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">인덕션</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">전자레인지</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">식기세척기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">정수기</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<div class="btn tit">계절가전</div>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">에어컨</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">냉난방기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">공기청정기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">공기살균기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">제습기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">난방기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">가습기</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a class="btn tit">생활가전</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">청소기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">결합상품</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">펫용품</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">세탁기+건조기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">식물재배기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">세탁기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">비데</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">건조기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">연수기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">의류관리기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">전기차충전기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">신발관리기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">블랙박스</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">스팀다리미</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a class="btn tit">TVㆍ디지털</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">TV</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">노트북</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">모니터</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">태블릿</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">빔프로젝트</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">프린터</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">오디오</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">헤드셋</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">전자칠판</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">피아노</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a class="btn tit">가구</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">안마의자</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">반신욕기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">전기자전거</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">기타</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">로드ㆍ산악ㆍ자전거</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">런닝머신</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">운동기구</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">마사지기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">미용기기</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a class="btn tit">뷰티ㆍ건강</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">매트리스</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">침대프레임</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">온수매트</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">침대</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">소파</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a class="btn tit">업소용</a>
+								<ul class="depth">
+								  <li><a href="shop_prod_list.html" class="btn">냉장고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">서빙ㆍ청소로봇</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">김치냉장고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">테이블오더</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">냉동고</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">식기세척기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">제빙기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">키오스크</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">고기숙성기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">카드단말기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">튀김기</a></li>
+								  <li><a href="shop_prod_list.html" class="btn">음식물처리기</a></li>
+								</ul>
+							  </li>
+							</ul>
+							
+							<div class="util">
+								<a class="btn search-open">검색</a>
+								<div class="member-wrap">
+									<a class="btn log"></a>
+									<div class="log-wrap">
+											<a href="member_login.html" class="btn"><span>로그인</span></a>
+											<a href="my_page.html" class="btn"><span>마이페이지</span></a>
+											<a href="member_join.html" class="btn join">회원가입</a>
+										<a href="notice_list.html" class="btn cs">고객센터</a>
+										<a href="event_list.html" class="btn event">이벤트</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</header>
+
+					<!--gnb 메뉴 전체보기-->
+					<div class="gnb-all-wrap">
+						<div class="dim">
+						</div>
+						<div class="gnb-all-inner">
+					  <div class="l-wrap">
+						<p>가전렌탈 <img src="resources/images/use/ico-tri.svg" alt="">
+						<div class="dir-btn">
+						  <a href="notice_list.html" class="btn">고객센터</a>
+						  <a href="event_list.html" class="btn">이벤트</a>
+						  <a href="my_page.html" class="btn">마이페이지</a>
+						</div>
+					  </div>
+					  <div class="r-wrap">
+						<ul>
+						  <li>
+							<p>주방가전</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">냉장고</a>
+								<a href="shop_prod_list.html" class="btn">김치냉장고</a>
+								<a href="shop_prod_list.html" class="btn">냉동고</a>
+								<a href="shop_prod_list.html" class="btn">와인셀러</a>
+								<a href="shop_prod_list.html" class="btn">음식물처리기</a>
+								<a href="shop_prod_list.html" class="btn">인덕션</a>
+								<a href="shop_prod_list.html" class="btn">식기세척기</a>
+							  </div>
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">커피머신</a>
+								<a href="shop_prod_list.html" class="btn">전기밥솥</a>
+								<a href="shop_prod_list.html" class="btn">오븐</a>
+								<a href="shop_prod_list.html" class="btn">믹서기</a>
+								<a href="shop_prod_list.html" class="btn">에어프라이기</a>
+								<a href="shop_prod_list.html" class="btn">전자레인지</a>
+								<a href="shop_prod_list.html" class="btn">정수기</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>계절가전</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">에어컨</a>
+								<a href="shop_prod_list.html" class="btn">냉난방기</a>
+								<a href="shop_prod_list.html" class="btn">공기청정기</a>
+								<a href="shop_prod_list.html" class="btn">공기살균기</a>
+								<a href="shop_prod_list.html" class="btn">제습기</a>
+								<a href="shop_prod_list.html" class="btn">난방기</a>
+								<a href="shop_prod_list.html" class="btn">가습기</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>생활가전</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">청소기</a>
+								<a href="shop_prod_list.html" class="btn">펫용품</a>
+								<a href="shop_prod_list.html" class="btn">식물재배기</a>
+								<a href="shop_prod_list.html" class="btn">비데</a>
+								<a href="shop_prod_list.html" class="btn">연수기</a>
+								<a href="shop_prod_list.html" class="btn">전기차충전기</a>
+								<a href="shop_prod_list.html" class="btn">블랙박스</a>
+							  </div>
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">결합상품</a>
+								<a href="shop_prod_list.html" class="btn">세탁기+건조기</a>
+								<a href="shop_prod_list.html" class="btn">세탁기</a>
+								<a href="shop_prod_list.html" class="btn">건조기</a>
+								<a href="shop_prod_list.html" class="btn">의류관리기</a>
+								<a href="shop_prod_list.html" class="btn">신발관리기</a>
+								<a href="shop_prod_list.html" class="btn">스팀다리미</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>TVㆍ디지털</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">TV</a>
+								<a href="shop_prod_list.html" class="btn">모니터</a>
+								<a href="shop_prod_list.html" class="btn">빔프로젝트</a>
+								<a href="shop_prod_list.html" class="btn">오디오</a>
+								<a href="shop_prod_list.html" class="btn">헤드셋</a>
+								<a href="shop_prod_list.html" class="btn">전자칠판</a>
+								<a href="shop_prod_list.html" class="btn">피아노</a>
+							  </div>
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">노트북</a>
+								<a href="shop_prod_list.html" class="btn">태블릿</a>
+								<a href="shop_prod_list.html" class="btn">프린터</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>뷰티ㆍ건강</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">안마의자</a>
+								<a href="shop_prod_list.html" class="btn">전기자전거</a>
+								<a href="shop_prod_list.html" class="btn">로드ㆍ산악ㆍ자전거</a>
+								<a href="shop_prod_list.html" class="btn">런닝머신</a>
+								<a href="shop_prod_list.html" class="btn">운동기구</a>
+								<a href="shop_prod_list.html" class="btn">마사지기</a>
+								<a href="shop_prod_list.html" class="btn">미용기기</a>
+							  </div>
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">반신욕기</a>
+								<a href="shop_prod_list.html" class="btn">기타</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>가구</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">매트리스</a>
+								<a href="shop_prod_list.html" class="btn">침대프레임</a>
+								<a href="shop_prod_list.html" class="btn">온수매트</a>
+								<a href="shop_prod_list.html" class="btn">침대</a>
+								<a href="shop_prod_list.html" class="btn">소파</a>
+							  </div>
+							</div>
+						  </li>
+						  <li>
+							<p>업소용</p>
+							<div class="btns">
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">냉장고</a>
+								<a href="shop_prod_list.html" class="btn">김치냉장고</a>
+								<a href="shop_prod_list.html" class="btn">냉동고</a>
+								<a href="shop_prod_list.html" class="btn">제빙기</a>
+								<a href="shop_prod_list.html" class="btn">고기숙성기</a>
+								<a href="shop_prod_list.html" class="btn">튀김기</a>
+								<a href="shop_prod_list.html" class="btn">음식물처리기</a>
+							  </div>
+							  <div class="inner">
+								<a href="shop_prod_list.html" class="btn">서빙ㆍ청소로봇</a>
+								<a href="shop_prod_list.html" class="btn">테이블오더</a>
+								<a href="shop_prod_list.html" class="btn">식기세척기</a>
+								<a href="shop_prod_list.html" class="btn">키오스크</a>
+								<a href="shop_prod_list.html" class="btn">카드단말기</a>
+							  </div>
+							</div>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+						
+					</div>
+					<!--검색창-->
+					<div class="search-wrap">
+						<div class="dim">
+						</div>
+						<div class="search-inner">
+							<div class="search-top">
+								<p class="tit">
+									어떤 제품을 <b>찾고 계신가요?</b>
+								</p>
+								<a class="btn search-close" style="font-size:0px;">검색창 닫기</a>
+							</div>
+							<div class="search-bar">
+								<input type="search" id="search_info" placeholder="카테고리, 제품명, 제품번호, 브랜드" >
+								<button onclick="searchInfo();" style="border: none;">검색</button>
+							</div>
+						</div>
+					</div>
+					
+			<script type="text/javascript">
+			//header height
+			var header = $('header');
+			var headerH = $('header').outerHeight();
+			var bannerH = $('.banner').outerHeight();
+			var contH;
+			var docH;
+			var wrap = $(".wrap");
+			var gnbAllMenuBtn = $(".gnb-all-menu");
+			var bannerCloseBtn = $(".banner .close");
+
+			function contentH() {
+				docH = $(window).innerHeight();
+				contH = docH - (headerH + bannerH);
+				//mobile content height
+				mobileGnbUnitHeight();
+			}
+
+			function mobileGnbUnitHeight() {
+				if ($(window).innerWidth() < 720) {
+					$(".gnb-all-wrap").css("height",contH + "px");
+					$(".search-wrap").css("height",contH + "px");
+				}
+			}
+
+			//mobile
+			function bannerXContentH() {
+				docH = $(window).innerHeight();
+				contH = docH - headerH;
+				$(".gnb-all-wrap").css("height",contH + "px");
+				$(".search-wrap").css("height",contH + "px");
+				visualHeightStyle();
+			}
+
+			function gnbNull() {
+				$(".gnb-wrap").css("pointerEvents","none");
+			}
+
+			function gnbActive() {
+				$(".gnb-wrap").css("pointerEvents","auto");
+			}
+
+			function gnbAllBtnNull() {
+				$(".gnb-all-menu").css("pointerEvents","none");
+			}
+
+			function gnbAllBtnActive() {
+				$(".gnb-all-menu").css("pointerEvents","auto");
+			}
+
+
+			//pc visual height
+			function visualHeightStyle() {
+				$(".visual").css("height",contH + "px");
+			}
+
+			function resizeActive() {
+				contentH();
+					visualHeightStyle();
+			}
+
+			function searchInfo(){
+				if($("#search_info").val()==""){
+						alert("검색어를 입력 해주세요.");
+						return false;
+				}
+				
+				location.href = "search_list.html");
+			}
+
+			$(document).ready(function() {
+				// 검색어 Enter 이벤트
+				$("#search_info").keydown(function(key) {
+					if (key.keyCode == 13) {        			
+						searchInfo();
+					}
+				});
+				
+				//검색창
+				$(".search-open").on("click",function(){
+					$(".search-wrap").addClass("open");
+					gnbNull();
+					gnbAllBtnNull();
+				});
+
+				$(".search-close").on("click",function(){
+					$(".search-wrap").removeClass("open");
+					gnbActive();
+					gnbAllBtnActive();
+				});
+
+				//dim click search, gnb all menu close
+				$(".dim").on("click",function(){
+					$("#menuToggle").find("input[type='checkbox']").prop("checked", false);
+					$(".search-wrap").removeClass("open");
+					$(".wrap").removeClass("gnb-open");
+					gnbActive();
+					gnbAllBtnActive();
+				});
+
+				$(".banner .close").on("click",function(){
+					$(".wrap").addClass("ban-x");
+					resizeActive();
+					if ($(window).innerWidth() < 720) {
+						bannerXContentH();
+					}
+				});
+
+				$(".gnb-all-menu").on("click",function(){
+					if($(".wrap").hasClass("gnb-open")){
+						$(".wrap").removeClass("gnb-open");
+						gnbActive();
+					}else{
+						$(".wrap").addClass("gnb-open");
+						gnbNull();
+					}
+				});
+				
+				contentH();
+					visualHeightStyle();
+			});
+
+			$(window).resize(function(){
+				resizeActive();
+			});
+			</script>
+		</div>
+         
+		<section>
+			<div class="container" style="padding-top: 2rem;">
+				<div class="inner-box">
+					<div class="title-box">
+						<h2 class="tc">비밀번호 찾기</h2>
+					</div>
+					<div class="title-box">
+							<p class="tc">비밀번호를 잊으셨나요?<br>가입 시 입력하신 아이디로 찾아보세요.</p>
+					</div>
+					<div class="write-box">
+						<ul>
+							<li>
+								<strong class="tit">아이디</strong>
+								<div class="input-box">
+									<input type="text"  id="user_id" name="user_id" placeholder="아이디" onfocusin="javascript:inputIn(this);" onfocusout="javascript:inputOut(this);" />
+								</div>
+							</li>
+							<li>
+								<strong class="tit">이름</strong>
+								<div class="input-box">
+									<input type="text" id="user_name" name="user_name" placeholder="이름" onfocusin="javascript:inputIn(this);" onfocusout="javascript:inputOut(this);">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="button-box mt55 mt-lg-40">
+						<a href="javascript:void(0)" onclick="idAndNameCheckAjax();" class="btn btn-black">비밀번호 찾기</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+		<div id="footer">
+			<!--채팅 및 최상단으로 가기-->
+		  <div class="side-dir">
+			<a class="btn go-top" style="font-size:0px;">최상단으로 가기</a>
+		  </div>
+
+	<footer>
+			<div class="f-inner">
+				<div class="f-top">
+					<!-- <a href="/useTerm.do" class="btn">이용약관</a> -->
+					<a href="private_info.html" class="btn">개인정보취급방침</a>
+				</div>
+				<div class="f-mid">
+					<div class="mid">
+					  <h1><a href="javascript:void(0)" class="btn" style="font-size:0px;">Rental Day</a></h1>
+					  <div class="sns">
+						<a href="javascript:void(0)" class="btn inst" style="font-size:0px;">instagram</a>
+						<a href="javascript:void(0)" class="btn yt" style="font-size:0px;">youtube</a>
+						<a href="javascript:void(0)" class="btn kkt" style="font-size:0px;">kakaotalk</a>
+					  </div>
+					</div>
+					<div class="mid">
+						<address>
+							대표 : 송현재 <span>|</span> 사업자등록번호 : 292-8 8-01187 <span class="web">|</span><br class="mo"> 통신판매번호 : 제 2018-서울강남-03127 호<br>
+							서울특별시 강남구 도산대로15길 40-1(신사동) <span class="web">|</span><br class="mo"> 팩스 : 070-8677-4305<br>
+							개인정보관리책임자 : 서창원 <span>|</span>cs@useplace.kr
+						</address>
+						<div class="cs">
+							<b>고객센터  1522-6458</b>
+							09:00~18:00 (토ㆍ일 공휴일 휴무)
+						</div>
+					</div>
+					<div class="mid">
+						<span><p>고객센터</p>1522-6458</span>
+					</div>
+			  </div>
+			  <div class="f-btt">
+					<p>
+						(C) 2018 USEPLACE INC. All Rights Reserved
+					</p>
+			  </div>
+		  </div>
+	</footer>
+	<script src="resources/js/use/jquery-latest.min.js"></script>
+	<script src="resources/js/use/swiper-bundle.min.js"></script>
+	<!-- Enliple Tracker Start -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		//상단으로 가기
+		$(".go-top").on("click",function(){
+			$(window).scrollTop(0);
+		});
+	});
+
+	</script>
+	<!-- Enliple Tracker End -->
+
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+            function idAndNameCheckAjax() {
+                var user_id = $("#user_id").val();
+                var user_name = $("#user_name").val();
+
+                if (user_id == "") {
+                    alert("아이디를 입력 하세요.");
+                    return false;
+                }
+
+                if (user_name == "") {
+                    alert("이름을 입력 하세요.");
+                    return false;
+                }
+
+                location.href="member_find_pw_complete.html";
+            }
+			
+            function inputIn(obj){
+                var box = $(obj).closest(".input-box");
+
+                box.addClass("focus");
+            }
+                        
+            function inputOut(obj){
+                var box = $(obj).closest(".input-box");
+
+                box.removeClass("focus");
+                        	
+                var redex = /\s/ig;
+                var value = $(obj).val().toString().replace(redex, "").length;
+
+                // 형제 인풋요소가 비어있다면 비활성화
+                if(box.find("input").length > 1){
+                	var child = box.find("input").not($(obj));
+                	var childvalue = child.val().toString().replace(redex, "").length;
+                	if(childvalue == 0) box.removeClass("active");
+                }
+                    		
+                // 띄어쓰기를 제외한 글자가 존재하다면
+                if(value > 0){
+                	box.addClass("active");
+                }else{
+                	box.removeClass("active");
+                }
+            }
+            
+            $(document.body).ready(function () {
+            	$("#user_id").on("blur keyup", function(key) {
+                    $(this).val( $(this).val().replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '' ) );
+                });
+            	
+	         	// 검색어 Enter 이벤트
+	    		$("#user_id").keydown(function (key) {
+	    			if (key.keyCode == 13) {
+	    				idAndNameCheckAjax();
+	    			}
+	    		});
+	         	
+	    		// 검색어 Enter 이벤트
+	    		$("#user_name").keydown(function (key) {
+	    			if (key.keyCode == 13) {
+	    				idAndNameCheckAjax();
+	    			}
+	    		});
+            });
+</script>
+</body>
+</html>
