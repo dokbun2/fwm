@@ -43,10 +43,10 @@
   }
   .container .wrap.ban-x .gnb-all-wrap,
   .container .wrap.ban-x .search-wrap {
-    top: 6.73611111vw;
+    top: 4.5vw;
   }
   .container .wrap.ban-x section {
-    margin-top: 6.73611111vw;
+    margin-top: 4.5vw;
   }
   .container .wrap .banner {
     font-size: 0.90277778vw;
@@ -97,7 +97,7 @@
   }
   .container .wrap header {
     width: 100%;
-    height: 6.73611111vw;
+    height: 4.5vw;
     position: fixed;
     left: 0vw;
     top: 2.77777778vw;
@@ -133,7 +133,7 @@
 
   .container .wrap header .h-inner .gnb-wrap {
     width: 75.20833333vw;
-    height: 6.73611111vw;
+    height: 4.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,10 +173,12 @@
     margin-right: 0vw;
   }
   .container .wrap header .h-inner .gnb-wrap .gnb-list > li .tit {
-    line-height: 6.73611111vw;
+    line-height: 4.5vw;
     font-weight: 700;
     color: #080808;
     height: 100%;
+    display: flex;
+    align-items: center;
   }
   .container .wrap header .h-inner .gnb-wrap .gnb-list .depth {
     display: grid;
@@ -190,7 +192,7 @@
     text-align: left;
     position: absolute;
     left: -1.31944444vw;
-    top: 6.73611111vw;
+    top: 4.5vw;
     right: auto;
     bottom: auto;
     background-color: #fff;
@@ -211,7 +213,7 @@
   }
   .container .wrap header .h-inner .gnb-wrap .util {
     font-size: 0vw;
-    height: 6.73611111vw;
+    height: 4.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -730,7 +732,7 @@
     display: block;
   }
   .container .wrap section {
-    margin-top: 9.51388889vw;
+    margin-top: 7.27777778vw;
     position: relative;
   }
   .container .wrap section article {
@@ -955,6 +957,8 @@
     padding: 0vw;
     width: 100%;
     max-width: 100%;
+    position: relative;
+    z-index: 50;
   }
   .container .wrap section article.visual .swiper {
     position: relative;
