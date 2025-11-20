@@ -122,6 +122,7 @@
     width: 8.88888889vw;
     height: 8.88888889vw;
     position: relative;
+    margin-right: 4.44444444vw;
   }
   .container .wrap header .h-inner .gnb-all-menu:after {
     content: '';

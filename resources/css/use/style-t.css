@@ -1092,20 +1092,38 @@
   }
   .container .wrap section article.art1 .product {
     margin-top: 2.63888889vw;
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5vw;
   }
   .container .wrap section article.art1 .product .prd {
-    width: 18.47222222vw;
-    height: 10.20833333vw;
+    width: calc(25% - 1.125vw);
     text-align: center;
+    margin-bottom: 1.5vw;
   }
   .container .wrap section article.art1 .product .prd .thumb {
-    width: 18.47222222vw;
-    height: 7.63888889vw;
-    border-radius: 1.04166667vw;
-    margin-bottom: 0.34722222vw;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.8vw;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .wrap section article.art1 .product .prd .thumb a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .wrap section article.art1 .product .prd .thumb a img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
   }
   .container .wrap section article.art1 .product .prd p {
     font-size: 1.11111111vw;

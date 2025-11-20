@@ -122,6 +122,22 @@
 			width:1.77777778rem;
 			height:1.77777778rem;
 			position:relative;
+			margin-right:0.88888889rem;
+	}
+	.container .wrap header .h-inner .gnb-all-menu:after {
+			content:'';
+			display:block;
+			width:1.11111111rem;
+			height:1.04166667rem;
+			background-image:url('../../../images/use/ico-gnb.svg');
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+			left:50%;
+			top:50%;
+			right:auto;
+			bottom:auto;
+			transform:translate(-50%,-50%);
 	}
 	.container .wrap header .h-inner .gnb-wrap {
 			width:60.16666667rem;
@@ -717,67 +733,12 @@
 	.container .wrap .search-wrap.open {
 			display:block;
 	}
-	#menuToggle {
-		display:block;
-		position:relative;
-		top:9px;
-		left:0;
-		z-index:1;
-		-webkit-user-select:none;
-		user-select:none;
-	}
-	#menuToggle a {
-		text-decoration:none;
-		color:#232323;
-		transition:color 0.3s ease;
-	}
-	#menuToggle a:hover {
-		color: tomato;
-	}
-	#menuToggle input {
-		display:block;
-		width:30px;
-		height:22px;
-		position:absolute;
-		top:-7px;
-		left:-5px;
-		cursor:pointer;
-		opacity:0;
-		/* hide this */
-		z-index:2;
-		/* and place it over the hamburger */
-		-webkit-touch-callout:none;
-	}
-	/* * Just a quick hamburger */
-	#menuToggle span {
-		display:block;
-		width:22px;
-		height:2px;
-		margin-bottom:5px;
-		position:relative;
-		background:#232323;
-		border-radius:3px;
-		z-index:1;
-		transform-origin:4px 0px;
-		transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
-	}
-	#menuToggle span:first-child {
-		transform-origin:0% 0%;
-	}
-	#menuToggle span:nth-last-child(2) {
-		transform-origin:0% 100%;
-	}
-	#menuToggle input:checked ~ span {
-		opacity:1;
-		transform:rotate(45deg) translate(-7px,-12px);
-		background:#3f3f3f;
-	}
-	#menuToggle input:checked ~ span:nth-last-child(3) {
-		opacity:0;
-		transform:rotate(0deg) scale(0.2,0.2);
-	}
-	#menuToggle input:checked ~ span:nth-last-child(2) {
-		transform:rotate(-45deg) translate(0,7px);
+	.container .wrap.gnb-open header .h-inner .gnb-all-menu:after {
+			width:1.04166667rem;
+			height:1.04166667rem;
+			background-image:url('../../../images/use/ico-close.svg');
+			background-repeat:no-repeat;
+			background-size:contain;
 	}
 	.container .wrap.gnb-open .gnb-all-wrap {
 			display:block;
